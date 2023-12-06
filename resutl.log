@@ -1,0 +1,199 @@
+
+Running configs.
+{'root_path': 'DATA', 'load_cache': False, 'load_pre_feat': False, 'search_hp': True, 'search_scale': [7, 3], 'search_step': [200, 20], 'init_beta': 1, 'init_alpha': 1.17, 'dataset': 'officehome', 'shots': 16, 'backbone': 'RN50', 'lr': 0.001, 'augment_epoch': 10, 'train_epoch': 20, 'cache_dir': './caches/officehome'} 
+
+Preparing dataset.
+Reading split from DATA/OfficeHome
+
+Getting textual features as CLIP's classifier.
+
+Constructing cache model by few-shot visual features and labels.
+Augment Epoch: 0 / 10
+Augment Epoch: 1 / 10
+Augment Epoch: 2 / 10
+Augment Epoch: 3 / 10
+Augment Epoch: 4 / 10
+Augment Epoch: 5 / 10
+Augment Epoch: 6 / 10
+Augment Epoch: 7 / 10
+Augment Epoch: 8 / 10
+Augment Epoch: 9 / 10
+
+Loading visual features and labels from val set.
+
+Loading visual features and labels from test set.
+
+-------- Searching hyperparameters on the val set. --------
+
+**** Zero-shot CLIP's val accuracy: 78.61. ****
+
+**** Tip-Adapter's val accuracy: 51.77. ****
+
+New best setting, beta: 0.10, alpha: 0.10; accuracy: 79.43
+New best setting, beta: 0.27, alpha: 0.10; accuracy: 79.55
+New best setting, beta: 0.31, alpha: 0.10; accuracy: 79.67
+New best setting, beta: 0.34, alpha: 0.10; accuracy: 79.91
+New best setting, beta: 0.55, alpha: 0.10; accuracy: 80.02
+New best setting, beta: 0.76, alpha: 0.10; accuracy: 80.14
+New best setting, beta: 0.82, alpha: 0.10; accuracy: 80.26
+New best setting, beta: 1.31, alpha: 0.10; accuracy: 80.38
+New best setting, beta: 1.45, alpha: 0.10; accuracy: 80.50
+New best setting, beta: 1.51, alpha: 0.24; accuracy: 80.61
+New best setting, beta: 1.55, alpha: 0.24; accuracy: 80.73
+New best setting, beta: 1.62, alpha: 0.24; accuracy: 80.85
+New best setting, beta: 1.69, alpha: 0.24; accuracy: 80.97
+New best setting, beta: 1.72, alpha: 0.24; accuracy: 81.09
+New best setting, beta: 2.34, alpha: 0.24; accuracy: 81.21
+New best setting, beta: 2.41, alpha: 0.24; accuracy: 81.32
+New best setting, beta: 2.45, alpha: 0.24; accuracy: 81.44
+New best setting, beta: 2.69, alpha: 0.24; accuracy: 81.56
+New best setting, beta: 2.76, alpha: 0.24; accuracy: 81.68
+New best setting, beta: 2.86, alpha: 0.39; accuracy: 81.80
+New best setting, beta: 3.10, alpha: 0.39; accuracy: 81.91
+New best setting, beta: 3.38, alpha: 0.24; accuracy: 82.03
+New best setting, beta: 3.55, alpha: 0.24; accuracy: 82.15
+New best setting, beta: 3.72, alpha: 0.53; accuracy: 82.27
+New best setting, beta: 3.83, alpha: 0.53; accuracy: 82.39
+New best setting, beta: 4.52, alpha: 0.68; accuracy: 82.51
+New best setting, beta: 4.83, alpha: 0.82; accuracy: 82.62
+New best setting, beta: 5.14, alpha: 1.26; accuracy: 82.74
+New best setting, beta: 5.17, alpha: 1.26; accuracy: 82.86
+New best setting, beta: 5.21, alpha: 1.26; accuracy: 82.98
+New best setting, beta: 5.48, alpha: 1.41; accuracy: 83.10
+New best setting, beta: 6.21, alpha: 1.41; accuracy: 83.22
+New best setting, beta: 6.41, alpha: 1.41; accuracy: 83.45
+New best setting, beta: 6.93, alpha: 1.55; accuracy: 83.57
+
+After searching, the best accuarcy: 83.57.
+
+
+-------- Evaluating on the test set. --------
+
+**** Zero-shot CLIP's test accuracy: 79.50. ****
+
+**** Tip-Adapter's test accuracy: 80.07. ****
+
+Train Epoch: 0 / 20
+LR: 0.000994, Acc: 0.7201 (1253.0/1740), Loss: 1.3632
+**** Tip-Adapter-F's test accuracy: 80.41. ****
+
+Train Epoch: 1 / 20
+LR: 0.000976, Acc: 0.8224 (1431.0/1740), Loss: 0.6763
+**** Tip-Adapter-F's test accuracy: 82.33. ****
+
+Train Epoch: 2 / 20
+LR: 0.000946, Acc: 0.8661 (1507.0/1740), Loss: 0.4704
+**** Tip-Adapter-F's test accuracy: 84.75. ****
+
+Train Epoch: 3 / 20
+LR: 0.000905, Acc: 0.8954 (1558.0/1740), Loss: 0.3828
+**** Tip-Adapter-F's test accuracy: 86.11. ****
+
+Train Epoch: 4 / 20
+LR: 0.000854, Acc: 0.9132 (1589.0/1740), Loss: 0.3136
+**** Tip-Adapter-F's test accuracy: 86.00. ****
+
+Train Epoch: 5 / 20
+LR: 0.000794, Acc: 0.9144 (1591.0/1740), Loss: 0.2669
+**** Tip-Adapter-F's test accuracy: 85.66. ****
+
+Train Epoch: 6 / 20
+LR: 0.000727, Acc: 0.9201 (1601.0/1740), Loss: 0.2489
+**** Tip-Adapter-F's test accuracy: 86.34. ****
+
+Train Epoch: 7 / 20
+LR: 0.000655, Acc: 0.9299 (1618.0/1740), Loss: 0.2255
+**** Tip-Adapter-F's test accuracy: 86.00. ****
+
+Train Epoch: 8 / 20
+LR: 0.000578, Acc: 0.9362 (1629.0/1740), Loss: 0.2078
+**** Tip-Adapter-F's test accuracy: 86.17. ****
+
+Train Epoch: 9 / 20
+LR: 0.000500, Acc: 0.9339 (1625.0/1740), Loss: 0.2155
+**** Tip-Adapter-F's test accuracy: 86.45. ****
+
+Train Epoch: 10 / 20
+LR: 0.000422, Acc: 0.9368 (1630.0/1740), Loss: 0.2026
+**** Tip-Adapter-F's test accuracy: 86.28. ****
+
+Train Epoch: 11 / 20
+LR: 0.000345, Acc: 0.9420 (1639.0/1740), Loss: 0.1960
+**** Tip-Adapter-F's test accuracy: 86.00. ****
+
+Train Epoch: 12 / 20
+LR: 0.000273, Acc: 0.9431 (1641.0/1740), Loss: 0.2001
+**** Tip-Adapter-F's test accuracy: 86.28. ****
+
+Train Epoch: 13 / 20
+LR: 0.000206, Acc: 0.9437 (1642.0/1740), Loss: 0.1793
+**** Tip-Adapter-F's test accuracy: 86.39. ****
+
+Train Epoch: 14 / 20
+LR: 0.000146, Acc: 0.9466 (1647.0/1740), Loss: 0.1781
+**** Tip-Adapter-F's test accuracy: 86.39. ****
+
+Train Epoch: 15 / 20
+LR: 0.000095, Acc: 0.9511 (1655.0/1740), Loss: 0.1766
+**** Tip-Adapter-F's test accuracy: 86.39. ****
+
+Train Epoch: 16 / 20
+LR: 0.000054, Acc: 0.9500 (1653.0/1740), Loss: 0.1897
+**** Tip-Adapter-F's test accuracy: 86.39. ****
+
+Train Epoch: 17 / 20
+LR: 0.000024, Acc: 0.9511 (1655.0/1740), Loss: 0.1802
+**** Tip-Adapter-F's test accuracy: 86.39. ****
+
+Train Epoch: 18 / 20
+LR: 0.000006, Acc: 0.9494 (1652.0/1740), Loss: 0.1921
+**** Tip-Adapter-F's test accuracy: 86.39. ****
+
+Train Epoch: 19 / 20
+LR: 0.000000, Acc: 0.9563 (1664.0/1740), Loss: 0.1683
+**** Tip-Adapter-F's test accuracy: 86.39. ****
+
+**** After fine-tuning, Tip-Adapter-F's best test accuracy: 86.45, at epoch: 9. ****
+
+
+-------- Searching hyperparameters on the val set. --------
+New best setting, beta: 0.10, alpha: 0.10; accuracy: 79.67
+New best setting, beta: 0.13, alpha: 0.10; accuracy: 79.79
+New best setting, beta: 0.27, alpha: 0.10; accuracy: 79.91
+New best setting, beta: 0.34, alpha: 0.10; accuracy: 80.26
+New best setting, beta: 0.34, alpha: 0.24; accuracy: 80.50
+New best setting, beta: 0.38, alpha: 0.24; accuracy: 80.61
+New best setting, beta: 0.41, alpha: 0.24; accuracy: 80.97
+New best setting, beta: 0.44, alpha: 0.24; accuracy: 81.21
+New best setting, beta: 0.48, alpha: 0.24; accuracy: 81.32
+New best setting, beta: 0.51, alpha: 0.24; accuracy: 81.44
+New best setting, beta: 0.55, alpha: 0.24; accuracy: 81.80
+New best setting, beta: 0.58, alpha: 0.24; accuracy: 82.27
+New best setting, beta: 0.58, alpha: 0.39; accuracy: 82.51
+New best setting, beta: 0.62, alpha: 0.39; accuracy: 82.74
+New best setting, beta: 0.62, alpha: 0.53; accuracy: 83.33
+New best setting, beta: 0.65, alpha: 0.39; accuracy: 83.69
+New best setting, beta: 0.65, alpha: 0.53; accuracy: 84.04
+New best setting, beta: 0.65, alpha: 0.68; accuracy: 84.28
+New best setting, beta: 0.69, alpha: 0.53; accuracy: 85.11
+New best setting, beta: 0.69, alpha: 0.68; accuracy: 85.34
+New best setting, beta: 0.72, alpha: 0.53; accuracy: 85.70
+New best setting, beta: 0.72, alpha: 0.68; accuracy: 85.93
+New best setting, beta: 0.76, alpha: 0.53; accuracy: 86.17
+New best setting, beta: 0.76, alpha: 0.68; accuracy: 86.41
+New best setting, beta: 0.79, alpha: 0.53; accuracy: 86.88
+New best setting, beta: 0.82, alpha: 0.82; accuracy: 87.00
+New best setting, beta: 0.82, alpha: 0.97; accuracy: 87.23
+New best setting, beta: 0.82, alpha: 1.12; accuracy: 87.35
+New best setting, beta: 0.89, alpha: 0.82; accuracy: 87.47
+New best setting, beta: 0.89, alpha: 0.97; accuracy: 87.59
+New best setting, beta: 0.89, alpha: 1.12; accuracy: 87.71
+New best setting, beta: 0.93, alpha: 0.82; accuracy: 87.94
+New best setting, beta: 0.96, alpha: 1.26; accuracy: 88.18
+
+After searching, the best accuarcy: 88.18.
+
+
+-------- Evaluating on the test set. --------
+**** Tip-Adapter-F's test accuracy: 86.45. ****
+
